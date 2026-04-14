@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena | Smart Solutions for Smarter Industries</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- Matter.js for Physics -->
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i> ATHENA
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#industries">Industries</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-menu-btn" id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Physical Elements Wrapper (to hide them when falling) -->
+    <div id="content-wrapper">
+
+        <!-- Hero Section -->
+        <section id="home" class="physics-item">
+            <div class="hero-content glass reveal active">
+                <h1 class="hero-title">
+                    Smart Solutions for<br>
+                    <span class="text-gradient">Smarter Industries</span>
+                </h1>
+                <p class="hero-subtitle">Leading the future with advanced AI intelligence, robotic inspection, and
+                    autonomous solutions.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-grid">
+                <div class="about-text reveal physics-item">
+                    <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                        <h2>Why Choose <span class="text-gradient">Athena</span>?</h2>
+                    </div>
+                    <p>At Athena, we merge cutting-edge Artificial Intelligence with real-world applications to bring
+                        unprecedented efficiency and safety to heavy industries, agriculture, and infrastructure.</p>
+                    <p>Our solutions provide fast, accurate, and cost-effective data delivery, minimizing risk and
+                        maximizing yield.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <span>Advanced AI Tech</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <span>Certified Solutions</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <span>Fast Data Delivery</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <span>Cost Effective</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal physics-item">
+                    <!-- Placeholder image matching the aesthetic -->
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="AI Technology Circuit">
+                </div>
+            </div>
+
+            <div class="stats-container reveal physics-item">
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="98">0</div>
+                    <div class="stat-label">Accuracy Rate %</div>
+                </div>
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="24">0</div>
+                    <div class="stat-label">24/7 Monitoring</div>
+                </div>
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="15">0</div>
+                    <div class="stat-label">Industry Awards</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="section-header reveal physics-item">
+                <h2>Our <span class="text-gradient">Services</span></h2>
+                <p>Deploying state-of-the-art technology to solve the most complex industrial challenges.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-helicopter"></i></div>
+                    <h3>Agriculture Drone Solutions</h3>
+                    <p>Precision crop monitoring and automated drone spraying systems to maximize yield and reduce crop
+                        loss.</p>
+                </div>
+
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>Fault Detection & Repair</h3>
+                    <p>Predictive maintenance powered by machine learning algorithms to identify and rectify anomalies
+                        before failure.</p>
+                </div>
+
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-building-shield"></i></div>
+                    <h3>Infrastructure Inspection</h3>
+                    <p>Autonomous drone and robotic assessments for bridges, pipelines, and high-rise construction
+                        safety.</p>
+                </div>
+
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Smart Intelligence</h3>
+                    <p>Centralized AI-driven data analytics platforms tailored for government agencies and enterprise
+                        resource planning.</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <!-- Industries Section -->
+<section id="industries">
+    <div class="section-header reveal physics-item">
+        <h2>Industries We <span class="text-gradient">Serve</span></h2>
+        <p>Empowering diverse sectors through bespoke AI solutions.</p>
+    </div>
+
+    <div class="industries-grid reveal physics-item">
+        <!-- Agriculture -->
+        <div class="industry-card glass">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                 alt="Agriculture" class="industry-image"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImFncmkiIGN4PSI1MCUiIGN5PSI1MCUiIHI9Ijc1JSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwZjBmZiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDBmZjg4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGYwYmZmIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhZ3JpKSIgc3Ryb2tlPSIjMDBmMGZmIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI1MCUiIHk9IjUyJSIgZm9udC1mYW1pbHk9Ik9yYml0cm9uLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5BR1JJQ1VMVFVSRTwvdGV4dD48L3N2Zz4=';this.classList.add('fallback-img');">
+            <div class="industry-overlay">
+                <i class="fa-solid fa-wheat-awn"></i>
+                <span class="industry-title">Agriculture</span>
+            </div>
+        </div>
+
+        <!-- Real Estate -->
+        <div class="industry-card glass">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                 alt="Real Estate" class="industry-image"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9InJlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI3NSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiZDAwZmYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmMDBmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwZjBmZiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcmUpIiBzdHJva2U9IiNiZDAwZmYiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTIlIiBmb250LWZhbWlseT0iT3JiaXRyb24sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPlJFQUwgRVNUREFURTwvdGV4dD48L3N2Zz4=';this.classList.add('fallback-img');">
+            <div class="industry-overlay">
+                <i class="fa-solid fa-city"></i>
+                <span class="industry-title">Real Estate</span>
+            </div>
+        </div>
+
+        <!-- Construction -->
+        <div class="industry-card glass">
+            <img src="https://images.pexels.com/photos/13599821/pexels-photo-13599821.jpeg"
+                 alt="Construction" class="industry-image"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImNvbnMiIGN4PSI1MCUiIGN5PSI1MCUiIHI9Ijc1JSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwZjBmZiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmYwMDAwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmYwYjAwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNjb25zKSIgc3Ryb2tlPSIjMDBmMGZmIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI1MCUiIHk9IjUyJSIgZm9udC1mYW1pbHk9Ik9yYml0cm9uLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5DT05TVFJVQ1RJT048L3RleHQ+PC9zdmc+';;this.classList.add('fallback-img');">
+            <div class="industry-overlay">
+                <i class="fa-solid fa-helmet-safety"></i>
+                <span class="industry-title">Construction</span>
+            </div>
+        </div>
+
+        <!-- Infrastructure -->
+        <div class="industry-card glass">
+            <img src="https://images.pexels.com/photos/31230742/pexels-photo-31230742.jpeg" 
+                 alt="Infrastructure" class="industry-image"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImluZnJhIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI3NSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiZDAwZmYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwZjBmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwODhmZiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjaW5mcmEpIiBzdHJva2U9IiNiZDAwZmYiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTIlIiBmb250LWZhbWlseT0iT3JiaXRyb24sIHNhbnMtc2VyaWUiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPklORlJBU1RSVUNUVVJFPjwvdGV4dD48L3N2Zz4=';this.classList.add('fallback-img');">
+            <div class="industry-overlay">
+                <i class="fa-solid fa-bridge"></i>
+                <span class="industry-title">Infrastructure</span>
+            </div>
+        </div>
+
+        <!-- Government -->
+        <div class="industry-card glass">
+            <img src="https://images.pexels.com/photos/3536263/pexels-photo-3536263.jpeg" 
+                 alt="Government" class="industry-image"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImdvdmVybiIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDBmMGZmIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNiZDAwZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjAwZmYiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dvdmVybilcIiBzdHJva2U9IiMwMGYwZmYiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTIlIiBmb250LWZhbWlseT0iT3JiaXRyb24sIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkdPViVSTk1FTlQ8L3RleHQ+PC9zdmc+';;this.classList.add('fallback-img');">
+            <div class="industry-overlay">
+                <i class="fa-solid fa-landmark"></i>
+                <span class="industry-title">Government</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header reveal physics-item">
+                <h2>Featured <span class="text-gradient">Projects</span></h2>
+                <p>Explore some of the monumental transformations we've delivered.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal physics-item">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Drone Survey" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Smart Yield Mapping</h3>
+                        <p>50,000 acres surveyed via autonomous drone fleet in 48 hours for national agriculture
+                            initiative.</p>
+                    </div>
+                </div>
+
+                <div class="project-card reveal physics-item">
+                    <img src="https://images.pexels.com/photos/3536263/pexels-photo-3536263.jpeg"
+                        alt="Construction Tech" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Structural Health Monitoring</h3>
+                        <p>AI-driven predictive algorithms deployed on smart bridges to detect micro-fractures.</p>
+                    </div>
+                </div>
+
+                <div class="project-card reveal physics-item">
+                    <img src="https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Server Data" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">GovTech Analytics Flow</h3>
+                        <p>Real-time data synchronization system integrating multiple city-wide traffic endpoints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials within a container -->
+        <section class="testimonials" id="testimonials">
+            <div class="section-header reveal physics-item">
+                <h2>Client <span class="text-gradient">Testimonials</span></h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card glass reveal physics-item">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <p>"Athena's drone spraying solution cut our operational costs by 35% within the first harvest
+                        season. The precision AI interface is incredibly intuitive."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1">
+                        <div>
+                            <h4>James Reynolds</h4>
+                            <span style="color: var(--neon-blue); font-size: 14px;">Director, AgriTech Farms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass reveal physics-item">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <p>"We partner with Athena for structural assessments. The AI fault detection identified stress
+                        fractures missed by manual checks. A literal life-saver."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2">
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <span style="color: var(--neon-purple); font-size: 14px;">VP of Infrastructure, Horizon
+                                Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass reveal physics-item">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <p>"The smart intelligence dashboard synthesized our municipal data beyond our expectations. A prime
+                        example of what GovTech is all about."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="Client 3">
+                        <div>
+                            <h4>Michael Reed</h4>
+                            <span style="color: var(--neon-blue); font-size: 14px;">City Planning Coordinator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass reveal physics-item">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <p>"Using Athena's predictive modeling for our real estate development prevented multiple structural
+                        risks before we even broke ground. Exceptionally detailed."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client 4">
+                        <div>
+                            <h4>Eleanor Chen</h4>
+                            <span style="color: var(--neon-purple); font-size: 14px;">Senior Architect, Vanguard
+                                Group</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Banner -->
+        <section style="min-height: auto; padding: 60px 5%;">
+            <div class="glass reveal physics-item"
+                style="padding: 60px; text-align: center; background: linear-gradient(135deg, rgba(15,20,35,0.8), rgba(0,240,255,0.1));">
+                <h2 style="font-size: 36px; margin-bottom: 20px;">Ready to Upgrade Your Operations?</h2>
+                <p style="font-size: 18px; margin-bottom: 30px; color: var(--text-muted);">Join industry leaders
+                    implementing our smart tech today.</p>
+                <a href="#contact" class="btn btn-primary">Request a Custom Quote</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header reveal physics-item">
+                <h2>Get in <span class="text-gradient">Touch</span></h2>
+                <p>Reach out to discuss tailored AI solutions for your specific operational needs.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal physics-item">
+                    <div class="info-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Email Us</h4>
+                            <p style="color: var(--text-muted);">inquiry@athena-intelligence.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Call Us</h4>
+                            <p style="color: var(--text-muted);">+91 91233 18596</p>
+                            <p style="color: var(--text-muted);">+91 82400 91982</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Headquarters</h4>
+                            <p style="color: var(--text-muted);">Kolkata, India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form glass reveal physics-item" style="padding: 40px;">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <select class="form-control" required style="cursor: pointer;">
+                                <option value="" disabled selected>Select Inquiry Purpose</option>
+                                <option value="agriculture">Agriculture Solutions</option>
+                                <option value="infrastructure">Infrastructure Inspection</option>
+                                <option value="fault_detection">Fault Detection</option>
+                                <option value="custom">Custom AI Solution</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="physics-item">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo logo">
+                        <i class="fa-solid fa-brain"></i> ATHENA
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Smart Solutions for Smarter Industries.
+                        Revolutionizing workflows with intelligent AI infrastructure and analytics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#projects">Case Studies</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Athena Intelligence. All rights reserved.
+            </div>
+        </footer>
+
+    </div> 
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9123318596" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+
+    
+
+     <script src="script.js"></script>
+
+
+ 
+</body>
+
+</html>
